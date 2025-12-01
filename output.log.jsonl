@@ -1,0 +1,115 @@
+{"timestamp": "2025-11-16 09:00:01", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "open_app", "device": "Pixel7", "os": "Android14"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:02", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "alice", "screen": "login", "duration_ms": "532"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:03", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "login_success", "network": "wifi"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:05", "level": "INFO", "source": "NetService", "fields": {"iface": "wlan0", "event": "dhcp_renew", "ip": "192.168.1.23", "lease_s": "3600"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:06", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "event": "load", "success": "true", "load_ms": "842"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:07", "level": "DEBUG", "source": "AIInference", "fields": {"model": "asr-small-v1", "gpu": "0", "vram_used_mb": "1024"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:08", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "1", "latency_ms": "123", "text_len": "48"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:09", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "play_audio", "track_id": "rtk_intro_01"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:10", "level": "DEBUG", "source": "NetService", "fields": {"event": "dns_query", "domain": "api.realtek.local", "duration_ms": "12"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:11", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/profile", "user_id": "alice", "latency_ms": "87"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:12", "level": "WARN", "source": "MobileApp", "fields": {"user_id": "alice", "battery_low": "true", "level": "18"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:13", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "alice", "sensor": "accelerometer", "value": "0.12,0.03,0.98"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:14", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "open_screen", "name": "settings"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:15", "level": "ERROR", "source": "MobileApp", "fields": {"user_id": "alice", "action": "save_settings", "error": "timeout"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:16", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "retry_save_settings", "result": "success"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:17", "level": "INFO", "source": "NetService", "fields": {"event": "http_500", "path": "/v1/settings", "user_id": "alice"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:18", "level": "WARN", "source": "NetService", "fields": {"event": "retry_scheduled", "path": "/v1/settings", "after_ms": "5000"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:19", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "event": "load", "success": "true", "load_ms": "2315"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:20", "level": "DEBUG", "source": "AIInference", "fields": {"model": "llm-chat-v2", "gpu": "0", "vram_used_mb": "6144"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:22", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "req_id": "42", "latency_ms": "812", "tokens_in": "128", "tokens_out": "96"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:24", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "open_app", "device": "iPhone15", "os": "iOS18"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:25", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "bob", "screen": "login", "duration_ms": "421"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:26", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "login_failed", "reason": "invalid_password"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:27", "level": "INFO", "source": "NetService", "fields": {"event": "http_401", "path": "/v1/login", "user_id": "bob"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:28", "level": "WARN", "source": "MobileApp", "fields": {"user_id": "bob", "show_dialog": "login_failed", "attempts": "1"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:30", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "login_success", "network": "4g"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:31", "level": "INFO", "source": "NetService", "fields": {"iface": "cell0", "event": "signal_strength", "rssi": "-82"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:32", "level": "INFO", "source": "AIInference", "fields": {"model": "recommend-v1", "req_id": "77", "latency_ms": "142", "items": "12"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:33", "level": "DEBUG", "source": "AIInference", "fields": {"model": "recommend-v1", "gpu": "0", "vram_used_mb": "512"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:34", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "view_page", "name": "home"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:35", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "bob", "items_loaded": "20", "duration_ms": "98"}, "raw_message": "scroll_event"}
+{"timestamp": "2025-11-16 09:00:36", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/feed", "user_id": "bob", "latency_ms": "133"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:37", "level": "WARN", "source": "NetService", "fields": {"iface": "cell0", "event": "packet_loss", "rate": "7%"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:38", "level": "ERROR", "source": "NetService", "fields": {"event": "tcp_reset", "remote": "10.0.0.12:443"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:39", "level": "INFO", "source": "NetService", "fields": {"event": "reconnect_attempt", "remote": "10.0.0.12:443"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:40", "level": "INFO", "source": "NetService", "fields": {"event": "reconnect_success", "remote": "10.0.0.12:443"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:41", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "2", "latency_ms": "156", "text_len": "35"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:42", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "3", "latency_ms": "141", "text_len": "39"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:43", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "4", "latency_ms": "189", "text_len": "52"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:44", "level": "WARN", "source": "AIInference", "fields": {"model": "asr-small-v1", "queue_len": "23", "warn": "high_load"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:45", "level": "DEBUG", "source": "AIInference", "fields": {"model": "asr-small-v1", "gpu": "0", "vram_used_mb": "1536"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:46", "level": "ERROR", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "5", "error": "gpu_oom", "vram_used_mb": "15936"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:47", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "action": "auto_batch_size_reduce", "new_batch_size": "8"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:48", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "6", "latency_ms": "244", "text_len": "60"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:49", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "close_app", "reason": "user_exit"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:50", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "open_screen", "name": "settings"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:51", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "bob", "name": "push_notification", "value": "true"}, "raw_message": "toggle_switch"}
+{"timestamp": "2025-11-16 09:00:52", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/settings", "user_id": "bob", "latency_ms": "75"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:53", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "req_id": "43", "latency_ms": "734", "tokens_in": "64", "tokens_out": "128"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:54", "level": "DEBUG", "source": "AIInference", "fields": {"model": "llm-chat-v2", "gpu": "0", "vram_used_mb": "6272"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:55", "level": "INFO", "source": "NetService", "fields": {"event": "bandwidth_usage", "iface": "wlan0", "up_kbps": "324", "down_kbps": "2190"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:56", "level": "INFO", "source": "NetService", "fields": {"event": "bandwidth_usage", "iface": "cell0", "up_kbps": "142", "down_kbps": "932"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:57", "level": "WARN", "source": "NetService", "fields": {"iface": "cell0", "event": "roaming_detected", "country": "JP"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:00:58", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "download_bundle", "size_kb": "18492"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:00", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "open_app", "device": "RealtekDemoPad", "os": "Android13"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:01", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "carol", "screen": "login", "duration_ms": "612"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:02", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "login_success", "network": "wifi"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:03", "level": "INFO", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "event": "load", "success": "true", "load_ms": "1951"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:04", "level": "DEBUG", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "gpu": "1", "vram_used_mb": "4096"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:05", "level": "INFO", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "req_id": "90", "latency_ms": "67", "objects": "3"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:06", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/device/bind", "user_id": "carol", "latency_ms": "102"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:07", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "open_screen", "name": "camera_preview"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:08", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "carol", "camera_state": "open", "resolution": "1080p", "fps": "30"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:09", "level": "INFO", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "req_id": "91", "latency_ms": "73", "objects": "5"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:10", "level": "WARN", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "queue_len": "12", "warn": "high_qps"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:11", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/metrics", "upload_size_kb": "392"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:12", "level": "DEBUG", "source": "NetService", "fields": {"event": "dns_query", "domain": "llm.internal", "duration_ms": "9"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:13", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "req_id": "44", "latency_ms": "889", "tokens_in": "256", "tokens_out": "64"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:14", "level": "ERROR", "source": "NetService", "fields": {"event": "http_504", "path": "/v1/metrics", "timeout_ms": "5000"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:15", "level": "WARN", "source": "NetService", "fields": {"event": "queue_backpressure", "length": "128"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:16", "level": "INFO", "source": "NetService", "fields": {"event": "http_retry", "path": "/v1/metrics", "attempt": "2"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:17", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/metrics", "latency_ms": "211"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:18", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "take_screenshot", "screen": "camera_preview"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:19", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "share_image", "target": "messenger"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:20", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "carol", "share_result": "success", "latency_ms": "684"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:21", "level": "INFO", "source": "NetService", "fields": {"iface": "wlan0", "event": "signal_strength", "rssi": "-61"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:22", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "7", "latency_ms": "132", "text_len": "22"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:23", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "8", "latency_ms": "147", "text_len": "31"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:24", "level": "INFO", "source": "AIInference", "fields": {"model": "asr-small-v1", "req_id": "9", "latency_ms": "139", "text_len": "29"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:25", "level": "DEBUG", "source": "AIInference", "fields": {"model": "asr-small-v1", "gpu": "0", "vram_used_mb": "1408"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:26", "level": "WARN", "source": "AIInference", "fields": {"model": "asr-small-v1", "avg_latency_ms": "180", "slo_ms": "200"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:27", "level": "INFO", "source": "NetService", "fields": {"event": "bandwidth_usage", "iface": "wlan0", "up_kbps": "412", "down_kbps": "3180"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:28", "level": "INFO", "source": "NetService", "fields": {"event": "bandwidth_usage", "iface": "cell0", "up_kbps": "85", "down_kbps": "621"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:29", "level": "ERROR", "source": "NetService", "fields": {"iface": "wlan0", "event": "wifi_disconnected", "reason": "auth_failed"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:30", "level": "INFO", "source": "NetService", "fields": {"iface": "wlan0", "event": "wifi_scan_started"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:31", "level": "DEBUG", "source": "NetService", "fields": {"iface": "wlan0", "found_ssid": "Realtek_AP", "rssi": "-55"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:32", "level": "INFO", "source": "NetService", "fields": {"iface": "wlan0", "event": "wifi_connected", "ssid": "Realtek_AP", "ip": "192.168.10.45"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:33", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "reopen_app", "device": "Pixel7", "os": "Android14"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:34", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "alice", "screen": "resume_last_session", "duration_ms": "231"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:35", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "req_id": "45", "latency_ms": "621", "tokens_in": "74", "tokens_out": "92"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:36", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "view_page", "name": "dashboard"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:37", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "alice", "dashboard_widgets": "5", "refresh_ms": "97"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:38", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/dashboard", "user_id": "alice", "latency_ms": "104"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:39", "level": "WARN", "source": "MobileApp", "fields": {"user_id": "alice", "battery_low": "true", "level": "12"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:40", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "alice", "action": "enable_battery_saver"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:41", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "alice", "cpu_throttle": "true", "max_fps": "45"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:42", "level": "INFO", "source": "AIInference", "fields": {"model": "recommend-v1", "req_id": "78", "latency_ms": "129", "items": "10"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:43", "level": "ERROR", "source": "AIInference", "fields": {"model": "recommend-v1", "req_id": "79", "error": "model_backend_busy"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:44", "level": "WARN", "source": "AIInference", "fields": {"model": "recommend-v1", "queue_len": "35", "warn": "degraded_mode"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:45", "level": "INFO", "source": "AIInference", "fields": {"model": "recommend-v1", "action": "open_circuit_breaker", "window_ms": "30000"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:46", "level": "INFO", "source": "AIInference", "fields": {"model": "recommend-v1", "action": "skip_request", "req_id": "80", "reason": "circuit_open"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:47", "level": "INFO", "source": "NetService", "fields": {"event": "http_503", "path": "/v1/recommend", "latency_ms": "201"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:48", "level": "INFO", "source": "NetService", "fields": {"event": "http_retry", "path": "/v1/recommend", "attempt": "2"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:49", "level": "INFO", "source": "NetService", "fields": {"event": "http_200", "path": "/v1/recommend", "latency_ms": "177"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:50", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "play_video", "video_id": "demo_ai_01"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:51", "level": "DEBUG", "source": "MobileApp", "fields": {"user_id": "bob", "video_buffer_ms": "212"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:52", "level": "WARN", "source": "NetService", "fields": {"iface": "cell0", "event": "low_throughput", "kbps": "256"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:53", "level": "INFO", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "req_id": "92", "latency_ms": "69", "objects": "2"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:54", "level": "DEBUG", "source": "AIInference", "fields": {"model": "vision-objdet-v1", "gpu": "1", "vram_used_mb": "4224"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:55", "level": "INFO", "source": "NetService", "fields": {"event": "bandwidth_usage", "iface": "wlan0", "up_kbps": "512", "down_kbps": "2980"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:56", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "carol", "action": "logout"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:57", "level": "INFO", "source": "MobileApp", "fields": {"user_id": "bob", "action": "close_app", "reason": "background_timeout"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:58", "level": "INFO", "source": "AIInference", "fields": {"model": "llm-chat-v2", "event": "health_check", "status": "ok", "avg_latency_ms": "745"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:01:59", "level": "DEBUG", "source": "AIInference", "fields": {"model": "llm-chat-v2", "gpu": "0", "vram_used_mb": "6336"}, "raw_message": ""}
+{"timestamp": "2025-11-16 09:02:00", "level": "INFO", "source": "NetService", "fields": {"event": "summary", "window_s": "60", "http_2xx": "38", "http_4xx": "2", "http_5xx": "3"}, "raw_message": ""}

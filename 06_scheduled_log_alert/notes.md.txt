@@ -1,0 +1,1 @@
+set ASR_SMTP_PAS=your_passwords

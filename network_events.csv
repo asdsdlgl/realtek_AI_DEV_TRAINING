@@ -1,0 +1,5 @@
+event_type,count
+wifi_disconnected,0
+tcp_reset,0
+http_504,0
+http_503,0

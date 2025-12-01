@@ -1,0 +1,40 @@
+log:
+  file: "dataset/example_mobile_ai.log"
+  lookback_minutes: 5        # 分析最近 N 分鐘（示範用，可直接視整份檔）
+
+schedule:
+  mode: "daily"              # daily / interval
+  daily_time: "09:05"        # 每天 09:05 跑一次（課堂可以改成現在+2 分鐘測試）
+  interval_minutes: 0        # 若 mode=interval 時才會用到
+
+email:
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  use_tls: true
+  sender: "iiiasrcloud@gmail.com"
+  sender_password_env: "ASR_SMTP_PASS"   # 密碼放在系統環境變數
+  recipients:
+    - "sre@example.com"
+    - "pm@example.com"
+
+alerts:
+  error_count:
+    enabled: true
+    min_errors: 3
+
+  http_5xx:
+    enabled: true
+    min_5xx: 1
+
+  gpu_oom:
+    enabled: true
+    min_events: 1
+
+  asr_latency_p95:
+    enabled: true
+    model: "asr-small-v1"
+    max_p95_ms: 200
+
+  wifi_disconnect:
+    enabled: true
+    min_events: 1
