@@ -1,45 +1,18 @@
 """
-mobile_log_basic_manual.py
+mobile_log_metrics_manual.py
 
-最出版：非常基本的 log 解析示範。
+最出版：只做非常基本的統計，讓學員感受到：
+- 如果要多加幾個指標會很累
+- 適合交給 AI 來補強
 
-功能：
-- 逐行讀取 example_mobile_ai.log
-- 粗略切出 timestamp / level / source / message
-- 將結果印出，不做進一步統計
-
-之後會用 AI 改寫成：
-- dataclass / 結構化 parser
-- 可以輸出 JSON / CSV
+目標：
+- 計算 ERROR / WARN / INFO 行數
+- 粗略抓出 AIInference model 的 latency_ms 數值平均
 """
 
 from pathlib import Path
 
-LOG_FILE = Path("dataset/example_mobile_ai.log")
-
-
-def parse_line_naive(line: str):
-    line = line.strip()
-    if not line:
-        return None
-
-    # 先用空白切開前幾欄 (timestamp level source)
-    parts = line.split()
-    if len(parts) < 4:
-        return {"raw": line}
-
-    timestamp = f"{parts[0]} {parts[1]}"
-    level = parts[2]
-    source = parts[3]
-    # 後面全部當成 message
-    message = " ".join(parts[4:])
-
-    return {
-        "timestamp": timestamp,
-        "level": level,
-        "source": source,
-        "message": message,
-    }
+LOG_FILE = Path("../datasets/example_mobile_ai.log")
 
 
 def main():
@@ -47,13 +20,45 @@ def main():
         print(f"[ERROR] log file not found: {LOG_FILE}")
         return
 
-    print(f"[INFO] reading log file: {LOG_FILE}")
+    count_info = count_warn = count_error = 0
+    asr_latencies = []
+
     with LOG_FILE.open("r", encoding="utf-8") as f:
         for line in f:
-            entry = parse_line_naive(line)
-            if entry is None:
+            line = line.strip()
+            if not line:
                 continue
-            print(entry)
+
+            if " INFO " in line:
+                count_info += 1
+            if " WARN " in line:
+                count_warn += 1
+            if " ERROR " in line:
+                count_error += 1
+
+            if "AIInference" in line and "latency_ms=" in line:
+                # 非常 naive 的取值方式
+                parts = line.split("latency_ms=")
+                if len(parts) > 1:
+                    right = parts[1]
+                    num_str = ""
+                    for ch in right:
+                        if ch.isdigit():
+                            num_str += ch
+                        else:
+                            break
+                    if num_str:
+                        asr_latencies.append(int(num_str))
+
+    print(f"[INFO] INFO count  = {count_info}")
+    print(f"[INFO] WARN count  = {count_warn}")
+    print(f"[INFO] ERROR count = {count_error}")
+
+    if asr_latencies:
+        avg = sum(asr_latencies) / len(asr_latencies)
+        print(f"[INFO] AIInference latency count = {len(asr_latencies)}, avg = {avg:.2f} ms")
+    else:
+        print("[INFO] no AIInference latency found")
 
 
 if __name__ == "__main__":
